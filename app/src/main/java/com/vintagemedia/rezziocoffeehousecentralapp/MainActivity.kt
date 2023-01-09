@@ -30,10 +30,13 @@ class MainActivity : ComponentActivity() {
 
 
 
-@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(showBackground = true)
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES,
+    device = "spec:width=1280dp,height=800dp,dpi=480", showSystemUi = true
+)
+@Preview(device = "spec:width=1280dp,height=800dp,dpi=480", showSystemUi = true)
+
 @Composable
-fun DefaultPreview() {
+fun PlaceholderPreview() {
     RezzioCoffeeHouseCentralAppTheme {
         DefaultPlaceholder()
     }
